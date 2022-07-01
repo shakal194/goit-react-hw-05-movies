@@ -1,0 +1,17 @@
+ul,
+li {
+  display: flex;
+}
+
+ul {
+  flex-wrap: wrap;
+}
+
+li {
+  flex-direction: column;
+  flex-basis: calc(20% - 0px);
+}
+
+.profile_image {
+  width: 160px;
+}

@@ -1,0 +1,12 @@
+.form__btn {
+  font-size: 16px;
+  margin-bottom: 10px;
+  background-color: rgba(247, 243, 4, 0.95);
+  cursor: pointer;
+}
+
+.form__btn:hover,
+.form__btn:focus {
+  background-color: rgba(20, 4, 247, 0.95);
+  color: rgba(247, 243, 4, 0.95);
+}

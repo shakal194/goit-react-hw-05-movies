@@ -1,37 +1,25 @@
-import { Container } from 'CommonStyled/Common.styled';
 import { NavLink } from 'react-router-dom';
-import css from './Navigation.module.css';
-import { Nav, MenuItem } from './Navigation.styled';
+import s from './Navigation.module.css';
 
 const Navigation = () => {
   return (
-    <Container>
+    <header className={s.header}>
       <nav>
-        <Nav>
-          <MenuItem>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                !isActive ? `${css.link}` : `${css.activeLink}`
-              }
-            >
-              Home
-            </NavLink>
-          </MenuItem>
-          <MenuItem>
-            <NavLink
-              to="/movies"
-              className={({ isActive }) =>
-                !isActive ? `${css.link}` : `${css.activeLink}`
-              }
-            >
-              Movies
-            </NavLink>
-          </MenuItem>
-        </Nav>
+        <NavLink
+          to="/"
+          className={navData => (navData.isActive ? s.activeLink : s.link)}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/movies"
+          className={navData => (navData.isActive ? s.activeLink : s.link)}
+        >
+          Movies
+        </NavLink>
       </nav>
-    </Container>
+    </header>
   );
 };
 
-export { Navigation };
+export default Navigation;
