@@ -61,12 +61,16 @@ export default function MovieDetailsView() {
           <p>Additional information:</p>
           <ul>
             <li>
-              <NavLink to={pathname.split('/').slice(0, 3).join('/') + '/cast'}>
+              <NavLink
+                className={s.movie__link}
+                to={pathname.split('/').slice(0, 3).join('/') + '/cast'}
+              >
                 Cast
               </NavLink>
             </li>
             <li>
               <NavLink
+                className={s.movie__link}
                 to={pathname.split('/').slice(0, 3).join('/') + '/reviews'}
               >
                 Reviews

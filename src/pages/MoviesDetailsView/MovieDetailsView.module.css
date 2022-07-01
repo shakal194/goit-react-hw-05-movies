@@ -1,4 +1,4 @@
-a {
+.movie__link {
   display: inline-block;
   text-decoration: none;
   padding: 12px;
@@ -7,8 +7,8 @@ a {
   font-size: 18px;
 }
 
-a:hover,
-a:focus {
+.movie__link:hover,
+.movie__link:focus {
   background-color: rgba(20, 4, 247, 0.95);
   color: rgba(247, 243, 4, 0.95);
 }
